@@ -1,0 +1,24 @@
+Package: stamp4r
+Title: stamp4r是一个分析不同组间特征差异并绘图展示的软件包
+Version: 0.0.0.1
+Authors@R: 
+    person("wang", "zhichao", , "wangzhichao1990@126.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: stamp4r是一个分析不同组间特征差异并绘图展示的软件包.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    broom,
+    R6,
+    tidyr,
+    dplyr,
+    tibble,
+    ggplot2,
+    magrittr,
+    patchwork
+Depends: R (>= 4.00)
+LazyData: true
+Suggests: 
+    roxygen2

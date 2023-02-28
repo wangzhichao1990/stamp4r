@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# stamp4r
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of stamp4r is to find diffrent features and plot extended errorbar plot.
+
+## Installation
+
+You can install the development version of stamp4r like so:
+
+``` r
+devtools::install_github("wangzhichao1990/stamp4r)
+```
+
+## Example
+
+
+```{r example}
+library(stamp4r)
+## create a stamp object
+obj <- stamp$new(feature_table = feature_table, metadata = metadata)
+
+## cal diff
+obj$cal_diff()
+obj$diff  |> head()
+
+## filter diff features
+obj$filter_diff_features()
+obj$diff_features()
+
+## extended errorbar plot
+obj$plot_extended_errorbar()
+```
+
+
