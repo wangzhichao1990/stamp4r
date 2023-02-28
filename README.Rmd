@@ -38,7 +38,6 @@ obj <- stamp$new(feature_table = feature_table, metadata = metadata)
 
 ## cal diff
 obj$cal_diff()
-obj$diff  |> head()
 
 ## filter diff features
 obj$filter_diff_features()
