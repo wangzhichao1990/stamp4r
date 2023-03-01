@@ -190,7 +190,8 @@ stamp <- R6Class(
         }
       }
       p2 <- p2 + geom_errorbar(aes(ymax = conf.high, ymin = conf.low)) +
-        geom_point(color = ifelse(data2$estimate > 0, "#FDB462", "#80B1D3"))
+        geom_point(color = ifelse(data2$estimate > 0, "#FDB462", "#80B1D3")) +
+        geom_hline(aes(yintercept = 0), linetype = "dashed", color = "black")
 
 
       p3 <- ggplot(data2) +
