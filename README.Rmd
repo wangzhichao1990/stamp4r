@@ -31,7 +31,7 @@ devtools::install_github("wangzhichao1990/stamp4r)
 ## Example
 
 
-```{r example}
+```{r example, fig.height = 8, fig.width = 12}
 library(stamp4r)
 ## create a stamp object
 obj <- stamp$new(feature_table = feature_table, metadata = metadata)
